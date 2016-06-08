@@ -1,6 +1,6 @@
 <?php
-require_once "jssdk.php";
-$jssdk = new JSSDK("", "");
+require_once "../jssdk.php";
+$jssdk = new JSSDK("APP_ID_HERE", "APP_SECRET_HERE");
 $signPackage = $jssdk->GetSignPackage();
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ $signPackage = $jssdk->GetSignPackage();
 </head>
 <body ontouchstart>
 	<div class="wxapi_container">
-		
+
 		<div class="wxapi_index_container">
 			<ul class="label_box lbox_close wxapi_index_list">
 				<li class="label_item wxapi_index_item"><a class="label_inner" href="#menu-basic">Basic API</a></li>
